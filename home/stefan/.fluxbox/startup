@@ -1,0 +1,22 @@
+# Gentoo's Fluxbox startup script
+
+# Programs which need to run constantly, as opposed to a one time execution,
+# need "&" at the end of the command.
+# start rxvt-unicode daemon
+urxvtd &
+
+# Show the Fluxbox splash-screen
+fbsetbg -C /usr/share/fluxbox/splash.jpg
+
+# This sets a background. You must have a program setup to do this
+# (x11-terms/eterm is recommended)
+#fbsetbg -f PATH_TO_IMAGE
+
+# Custom fonts directory
+#xset +fp PATH_TO_FONT_DIRECTORY
+
+# Starts the icons program
+idesk &
+
+# This MUST be the last command!
+exec /usr/bin/fluxbox -log ~/.fluxbox/log
