@@ -1,0 +1,12 @@
+" paste-mode from external programm
+set pastetoggle=<F2>
+" displayed tab width
+set tabstop=4
+" indent tab width
+set shiftwidth=4
+" color scheme desert for nice 256 colors
+colorscheme desert
+
+if &diff
+	colorscheme evening
+endif
