@@ -3,6 +3,8 @@
 autodetach on
 # no startup msg
 startup_message off
+# reduce wait-time for 'new screen' message
+msgwait 1
 # always use a login shell
 shell -$SHELL
 
